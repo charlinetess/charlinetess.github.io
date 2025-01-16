@@ -16,7 +16,7 @@ baseurl: "" # The subpath of your site, e.g., "/blog"
 # Author Settings
 author:
   name: "Charline Tessereau"
-  avatar: "/assets/images/avatar.jpeg" # Path to your avatar image
+  avatar: "https://charlinetess.github.io/assets/images/avatar.jpeg" # Path to your avatar image
   bio: "I am a **Computational Neuroscientist** and **Data Scientist** passionate about leveraging machine learning and data analysis to solve complex problems."
   location: "Tübingen, Germany"
   email: "tessereau.charline.at.gmail.com"
