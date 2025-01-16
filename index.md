@@ -8,7 +8,7 @@ title: "Welcome"
 </div>
 
 <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-  <img src="/assets/images/avatar.png" alt="Dr Charline Tessereau" style="width:150px; height:150px; border-radius:50%; margin-right: 20px;">
+  <img src="/assets/images/avatar.png" alt="Dr Charline Tessereau" style="width:128px; height:150px; border-radius:50%; margin-right: 20px;">
   <div>
     <h1>Dr Charline Tessereau</h1>
     <p>Computational Neuroscientist and Data Scientist</p>
