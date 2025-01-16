@@ -6,7 +6,7 @@ permalink: /applied-competences/
 
 ## Applied Competences
 
-My main areas of expertise include:
+Charline's main areas of expertise include:
 
 - **Reinforcement Learning**
   ![Reinforcement Learning Illustration](/assets/images/reinforcement-learning.png)
