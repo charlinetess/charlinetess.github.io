@@ -35,5 +35,4 @@ title: "Welcome"
   <a href="/research-interests/" class="button">Research Interests</a>
   <a href="/applied-competences/" class="button">Applied Competences</a>
   <a href="/publications/" class="button">Publications</a>
-  <a href="/contact/" class="button">Contact</a>
 </div>
