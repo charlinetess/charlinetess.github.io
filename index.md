@@ -4,7 +4,7 @@ title: "Welcome"
 ---
 
 <div style="text-align: center;">
-  <img src="/assets/images/avatar.jpeg" alt="Dr Charline Tessereau" style="width:200px; border-radius:50%;">
+  <img src="/assets/images/avatar.png" alt="Dr Charline Tessereau" style="width:200px; border-radius:50%;">
   <h1>Dr Charline Tessereau</h1>
   <p>Computational Neuroscientist and Data Scientist</p>
 </div>
