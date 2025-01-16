@@ -12,6 +12,8 @@ name: "Charline Tessereau"
 description: "Computational Neuroscientist and Data Scientist"
 url: "https://charlinetess.github.io" # The base hostname & protocol for your site
 baseurl: "" # The subpath of your site, e.g., "/blog"
+show_recent_posts: false
+
 
 # Author Settings
 author:
@@ -187,4 +189,3 @@ pagination:
     before: 2
     after: 2
 
-show_recent_posts: false
