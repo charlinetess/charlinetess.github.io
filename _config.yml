@@ -57,8 +57,7 @@ navigation:
     url: "/applied-competences/"
   - text: "Publications"
     url: "/publications/"
-  - text: "Contact"
-    url: "/contact/"
+
 
 # Social Links in Header/Footer
 social_links:
