@@ -65,17 +65,21 @@ navigation:
 social_links:
   - icon: "google scholar"
     url: "https://scholar.google.com/citations?user=XPTJG6wAAAAJ&hl=en&authuser=1"
+
   - icon: "twitter"
     url: "https://x.com/Charline_Tess"
-   - custom_html: <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
+
+  - custom_html: |
+      <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
         <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px;">
       </a>
-  # - icon: "bluesky"
-  #   url: "https://bsky.app/profile/chrltsr.bsky.social"
+
   - icon: "github"
     url: "https://github.com/charlinetess"
+
   - icon: "linkedin"
     url: "https://www.linkedin.com/in/charline-tessereau-457a95b8/"
+
 
 # SEO Settings
 seo:
