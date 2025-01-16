@@ -1,0 +1,7 @@
+# Minimal Mistakes Configuration
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+theme: null
+
+# Essential Site Settings (Will be customized in the next step)
