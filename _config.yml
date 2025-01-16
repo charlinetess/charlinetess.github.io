@@ -4,6 +4,183 @@
 remote_theme: "mmistakes/minimal-mistakes"
 theme: null
 
+# Site Settings
+locale: "en-US"
+title: "Dr Charline Tessereau"
+title_separator: "-"
+name: "Charline Tessereau"
+description: "Computational Neuroscientist and Data Scientist"
+url: "https://charlinetess.github.io" # The base hostname & protocol for your site
+baseurl: "" # The subpath of your site, e.g., "/blog"
 
+# Author Settings
+author:
+  name: "Charline Tessereau"
+  avatar: "/assets/images/avatar.jpeg" # Path to your avatar image
+  bio: "I am a **Computational Neuroscientist** and **Data Scientist** passionate about leveraging machine learning and data analysis to solve complex problems."
+  location: "Tübingen, Germany"
+  email: "tessereau.charline@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:tessereau.charline@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://charlinetess.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/Charline_Tess"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/chrltsr.bsky.social"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/charlinetess"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/charline-tessereau-457a95b8/"
 
-# Essential Site Settings (Will be customized in the next step)
+# Navigation
+navigation:
+  - text: "Home"
+    url: "/"
+  - text: "Publications"
+    url: "/publications/"
+  - text: "CVs"
+    url: "/cvs/"
+  - text: "Contact"
+    url: "/contact/"
+
+# Social Links in Header/Footer
+social_links:
+  - icon: "twitter"
+    url: "https://x.com/Charline_Tess"
+  - icon: "bluesky"
+    url: "https://bsky.app/profile/chrltsr.bsky.social"
+  - icon: "github"
+    url: "https://github.com/charlinetess"
+  - icon: "linkedin"
+    url: "https://www.linkedin.com/in/charline-tessereau-457a95b8/"
+
+# SEO Settings
+seo:
+  title: "Dr Charline Tessereau | Computational Neuroscientist & Data Scientist"
+  description: "Welcome to my professional website. I specialize in machine learning, data analysis, and computational neuroscience."
+
+# Analytics
+analytics:
+  provider: "google" # Options: "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID" # Replace with your actual Tracking ID
+    anonymize_ip: true
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-include-cache
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+# Exclude Specific Files and Directories
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+
+# Include Specific Files and Directories
+include:
+  - .htaccess
+  - _pages
+
+# Encoding and Markdown Settings
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Kramdown Settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS Settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalink Structure
+permalink: /:categories/:title/
+timezone: "Europe/Berlin" # Replace with your timezone
+
+# Pagination Settings
+paginate: 5
+paginate_path: /page:num/
+
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
