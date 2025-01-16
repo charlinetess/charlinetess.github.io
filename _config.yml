@@ -184,6 +184,9 @@ timezone: "Europe/Berlin" # Replace with your timezone
 paginate: 5
 paginate_path: /page:num/
 
+custom_css:
+  - "/assets/css/custom.css"
+  
 pagination:
   debug: false
   collection: 'posts'
