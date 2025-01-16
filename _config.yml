@@ -63,8 +63,9 @@ social_links:
     url: "https://scholar.google.com/citations?user=XPTJG6wAAAAJ&hl=en&authuser=1"
   - icon: "twitter"
     url: "https://x.com/Charline_Tess"
-  - icon: "bluesky"
-    url: "https://bsky.app/profile/chrltsr.bsky.social"
+  - custom_html: "<a href='https://bsky.app/profile/chrltsr.bsky.social'
+  # - icon: "bluesky"
+  #   url: "https://bsky.app/profile/chrltsr.bsky.social"
   - icon: "github"
     url: "https://github.com/charlinetess"
   - icon: "linkedin"
