@@ -4,6 +4,8 @@
 remote_theme: "mmistakes/minimal-mistakes"
 theme: null
 
+
+
 # Site Settings
 locale: "en-US"
 title: "Dr Charline Tessereau"
