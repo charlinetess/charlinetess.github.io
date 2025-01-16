@@ -25,10 +25,9 @@ title: "Welcome"
   <a href="https://x.com/Charline_Tess" target="_blank">
     <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png" alt="Twitter" style="width:30px; height:30px; margin: 0 5px;">
   </a>
-  <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
+  <a href="/assets/images/bluesky.svg" target="_blank">
     <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px; margin: 0 5px;">
   </a>
-  <!-- Add more social icons as needed -->
 </div>
 
 <div style="text-align: center; margin-top: 40px;">
