@@ -46,10 +46,14 @@ author:
 navigation:
   - text: "Home"
     url: "/"
-  - text: "Publications"
-    url: "/publications/"
   - text: "CVs"
     url: "/cvs/"
+  - text: "Research Interests"
+    url: "/research-interests/"
+  - text: "Applied Competences"
+    url: "/applied-competences/"
+  - text: "Publications"
+    url: "/publications/"
   - text: "Contact"
     url: "/contact/"
 
