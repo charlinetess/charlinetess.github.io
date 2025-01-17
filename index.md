@@ -3,6 +3,7 @@ layout: home
 title: "Welcome"
 ---
 
+
 <div style="text-align: center; margin-top: 40px;">
   <h2>Welcome</h2>
 </div>
