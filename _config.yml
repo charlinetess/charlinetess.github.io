@@ -1,16 +1,8 @@
 # Minimal Mistakes Configuration
 
+# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
 theme: null
-
-# Plugins recommended by Minimal Mistakes and used by your site
-plugins:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-include-cache
 
 # Site Settings
 locale: "en-US"
@@ -18,24 +10,23 @@ title: "Dr Charline Tessereau"
 title_separator: "-"
 name: "Charline Tessereau"
 description: "Computational Neuroscientist and Data Scientist"
-url: "https://charlinetess.github.io"
+url: "https://charlinetess.github.io" # The base hostname & protocol for your site
 baseurl: "" # The subpath of your site, e.g., "/blog"
 show_recent_posts: false
 
-# Hide the site title in the header (if you don't want the big text top-left)
+# Hide the site title from the header
 header:
   show_title: false
 
 # Author Settings
 author:
   name: "Charline Tessereau"
-  avatar: "/assets/images/avatar.png"
+  avatar: "/assets/images/avatar.png"  # Make sure /assets/images/avatar.png exists
   bio: "I am a **Computational Neuroscientist** and **Data Scientist** passionate about leveraging machine learning and data analysis to solve complex problems."
   location: "Tübingen, Germany"
   email: "tessereau.charline.at.gmail.com"
 
-# Navigation - the top bar links or optional side nav
-# If you want to see these links across your site:
+# Navigation (top-level links)
 navigation:
   - text: "Home"
     url: "/"
@@ -47,8 +38,7 @@ navigation:
     url: "/applied-competences/"
   - text: "Publications"
     url: "/publications/"
-  - text: "Contact"
-    url: "/contact/"
+  # Removed any link referencing the Quick-Start Guide
 
 # Social Links in Header/Footer
 social_links:
@@ -58,11 +48,10 @@ social_links:
   - icon: "twitter"
     url: "https://x.com/Charline_Tess"
 
-  # Replace custom_html referencing local .svg with an actual external link
-  # or do a custom icon approach. For quick fix, here's the correct link:
+  # Fixing the Bluesky link to point to the actual Bluesky profile
   - custom_html: |
       <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/external-link.png" alt="Bluesky" style="width:30px; height:30px;">
+        <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px;"/>
       </a>
 
   - icon: "github"
@@ -75,6 +64,15 @@ social_links:
 seo:
   title: "Dr Charline Tessereau | Computational Neuroscientist & Data Scientist"
   description: "Welcome to my professional website. I specialize in machine learning, data analysis, and computational neuroscience."
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-include-cache
+  # pagination removed to hide "Recent posts" (and we set show_recent_posts: false)
 
 # HTML Compression
 compress_html:
@@ -95,25 +93,56 @@ defaults:
       share: true
       related: true
 
-# We don't want the Minimal Mistakes "Recent posts" or "Quick-Start" doc references
-# => We'll handle that by removing references in layouts/data or simply ignoring them.
+# Exclude Specific Files and Directories
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
 
-# Pagination
-paginate: 5
-paginate_path: "/page:num/"
+# Include Specific Files and Directories
+include:
+  - .htaccess
+  - _pages
 
-# If you want to disable pagination entirely:
-# remove `jekyll-paginate` from the plugins list
-# and remove these lines:
-pagination:
-  debug: false
-  collection: "posts"
-  per_page: 5
-  permalink: "/page/:num/"
-  title: ":title - page :num"
-  limit: 0
-  sort_field: "date"
-  sort_reverse: true
+# Encoding and Markdown Settings
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# Additional Font overrides or custom CSS
-# We'll override the font in custom scss (below).
+# Kramdown Settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_codera
