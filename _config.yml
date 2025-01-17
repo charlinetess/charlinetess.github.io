@@ -185,25 +185,9 @@ permalink: /:categories/:title/
 timezone: "Europe/Berlin" # Replace with your timezone
 
 # Pagination Settings
-paginate: 5
-paginate_path: /page:num/
+# paginate: 5
+# paginate_path: /page:num/
 
 custom_css:
   - "/assets/css/custom.css"
-  
-pagination:
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
 
