@@ -1,7 +1,6 @@
-// assets/css/custom-fonts.scss
-// Force all body text to use Palatino
+// This file enforces Palatino site-wide
 
-@import "minimal-mistakes"; // import theme's main partials if needed
+@import "minimal-mistakes"; // if needed; safe to omit if there's no errors
 
 body,
 .site-content,
@@ -16,7 +15,7 @@ body,
   font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif !important;
 }
 
-// If you want headings to also use Palatino, include:
+// Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif !important;
 }
