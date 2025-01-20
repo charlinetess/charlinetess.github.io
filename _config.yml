@@ -48,9 +48,10 @@ social_links:
     url: "https://x.com/Charline_Tess"
 
   - custom_html: |
-   <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
-     <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px;"/>
-   </a>
+    <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
+      <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px;"/>
+    </a>
+
 
   - icon: "github"
     url: "https://github.com/charlinetess"
