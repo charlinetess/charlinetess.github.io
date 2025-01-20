@@ -14,19 +14,19 @@ url: "https://charlinetess.github.io" # The base hostname & protocol for your si
 baseurl: "" # The subpath of your site, e.g., "/blog"
 show_recent_posts: false
 
-# Hide the site title from the header
+# Hide site title in header
 header:
   show_title: false
 
 # Author Settings
 author:
   name: "Charline Tessereau"
-  avatar: "/assets/images/avatar.png"  # Make sure /assets/images/avatar.png exists
+  avatar: "/assets/images/avatar.png"  # Ensure /assets/images/avatar.png exists
   bio: "I am a **Computational Neuroscientist** and **Data Scientist** passionate about leveraging machine learning and data analysis to solve complex problems."
   location: "Tübingen, Germany"
   email: "tessereau.charline.at.gmail.com"
 
-# Navigation (top-level links)
+# Navigation
 navigation:
   - text: "Home"
     url: "/"
@@ -38,7 +38,6 @@ navigation:
     url: "/applied-competences/"
   - text: "Publications"
     url: "/publications/"
-  # Removed any link referencing the Quick-Start Guide
 
 # Social Links in Header/Footer
 social_links:
@@ -48,7 +47,6 @@ social_links:
   - icon: "twitter"
     url: "https://x.com/Charline_Tess"
 
-  # Fixing the Bluesky link to point to the actual Bluesky profile
   - custom_html: |
       <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank">
         <img src="/assets/images/bluesky.svg" alt="Bluesky" style="width:30px; height:30px;"/>
@@ -60,7 +58,7 @@ social_links:
   - icon: "linkedin"
     url: "https://www.linkedin.com/in/charline-tessereau-457a95b8/"
 
-# SEO Settings
+# SEO
 seo:
   title: "Dr Charline Tessereau | Computational Neuroscientist & Data Scientist"
   description: "Welcome to my professional website. I specialize in machine learning, data analysis, and computational neuroscience."
@@ -72,7 +70,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-include-cache
-  # pagination removed to hide "Recent posts" (and we set show_recent_posts: false)
+  # Omitting jekyll-paginate => hides recent posts feature
 
 # HTML Compression
 compress_html:
@@ -93,7 +91,7 @@ defaults:
       share: true
       related: true
 
-# Exclude Specific Files and Directories
+# Exclusions
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -122,12 +120,12 @@ exclude:
   - /docs
   - /test
 
-# Include Specific Files and Directories
+# Include
 include:
   - .htaccess
   - _pages
 
-# Encoding and Markdown Settings
+# Markdown/SCSS Settings
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
@@ -136,7 +134,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Kramdown Settings
 kramdown:
   input: GFM
   hard_wrap: false
@@ -147,18 +144,14 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Sass/SCSS Settings
 sass:
   sass_dir: _sass
   style: compressed
 
-# Permalink Structure
 permalink: /:categories/:title/
 timezone: "Europe/Berlin"
 
-# Load a custom stylesheet to set Palatino as the site font
+# Custom SCSS to set Palatino
 minimal_mistakes_skin: "default"
 custom_css:
   - "/assets/css/custom-fonts.scss"
-
-# (No pagination block)
