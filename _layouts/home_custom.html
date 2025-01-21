@@ -1,19 +1,7 @@
----
-layout: default
----
-
-<!-- 
-  _layouts/home_custom.html
-  A fully custom homepage layout inspired by joshuakgoldberg.com.
-  This layout:
-    - Puts navigation in top-right
-    - Centers your name + social icons + short "presentation text"
-    - Ensures Bluesky link goes to your real Bluesky profile
--->
+<!-- Only include the body content without <html>, <head>, or <body> tags -->
 
 <!-- Top Nav -->
 <nav class="top-nav">
-  <!-- Hardcode your five links from _config.yml, but we do them in HTML -->
   <a href="/">Home</a>
   <a href="/research-interests/">Research Interests</a>
   <a href="/applied-competences/">Applied Competences</a>
@@ -31,7 +19,6 @@ layout: default
 
     <!-- "Presentation text" like Joshua's short introduction -->
     <div class="presentation">
-      <!-- Replace this with your own short text about who you are or what you do -->
       <p>
         I am a <strong>Computational Neuroscientist</strong> and <strong>Data Scientist</strong>
         with a passion for machine learning, data analysis, and bridging real-world
@@ -64,6 +51,3 @@ layout: default
     </div>
   </div>
 </main>
-
-<!-- Minimal Mistakes includes -->
-{% include scripts.html %}
