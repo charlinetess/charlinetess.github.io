@@ -5,7 +5,7 @@
    2) Remove top-left site title link from Minimal Mistakes
    3) Remove extra blank space above navigation
    4) Make text and images smaller on inner pages
-================================================================ */
+=============================================================== */
 
 /* 1) Preserve avatar aspect ratio */
 .center-content .avatar,
@@ -25,7 +25,9 @@
 /* 3) Remove extra blank space above the top nav 
    by zeroing out masthead margins/padding */
 .masthead,
-.masthead__content {
+.masthead__content,
+.masthead__inner-wrap,
+.masthead__menu {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -41,71 +43,40 @@
   padding: 0 1rem !important;
 }
 
-/* reduce images to 70% of the container width, keep aspect ratio */
+/* Reduce images to 70% of the container width, keep aspect ratio */
 .page__content img,
 .post__content img,
 .archive__content img {
-  max-width: 70% !important;
-  height: auto !important;
-}
-
-/* custom-overrides.scss
-
-   Scales down text + images on pages with layout: single
-   or other Minimal Mistakes layouts.
-
-   1) Decrease font size
-   2) Limit image width to 70%
-*/
-
-/* 1) Smaller text on pages */
-.page__content {
-  font-size: 0.9rem !important; /* Adjust to your preference */
-  line-height: 1.5 !important;
-  max-width: 800px !important;
-  margin: 0 auto !important;
-  padding: 0rem !important;
-}
-
-/* 2) Limit image size to 70% of content width */
-.page__content img {
   max-width: 70% !important;
   height: auto !important;
   display: block;
   margin: 1rem auto !important; /* centers images */
 }
 
-/* Kills leftover top-left blank margin/padding from masthead or site-header */
-.masthead,
-.masthead__content,
-.site-header,
-.site-header__content {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.masthead .wrapper {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Force removal of any leftover margin/padding from Minimal Mistakes containers. */
-/* This specifically kills leftover space from .initial-content in default.html. */
-
+/* Additional Rules to Eliminate Any Extra Top Margin */
 .initial-content,
 .wrapper,
-.page__inner-wrap {
+.page__inner-wrap,
+main,
+body,
+html {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* If you still see extra space, add the body and more classes */
-body {
+/* Remove any top margin from main */
+main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure no margins on all elements within main */
+main * {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* Forcefully remove any margin/padding from the masthead area. */
+/* Remove any leftover margin/padding from masthead area */
 .masthead,
 .masthead__inner-wrap,
 .masthead__menu,
@@ -114,15 +85,8 @@ body {
   padding: 0 !important;
 }
 
-/* If there's still a leftover space, try removing from all children: */
+/* Eliminate margin and padding from all children of masthead */
 .masthead * {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.initial-content,
-.page__inner-wrap,
-.wrapper {
   margin: 0 !important;
   padding: 0 !important;
 }
