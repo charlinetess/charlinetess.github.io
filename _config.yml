@@ -150,3 +150,5 @@ timezone: "Europe/Berlin"
 minimal_mistakes_skin: "default"
 custom_css:
   - "/assets/css/custom-fonts.scss"
+  - "/assets/css/custom-overrides.scss"
+
