@@ -11,132 +11,59 @@ layout: default
     - Ensures Bluesky link goes to your real Bluesky profile
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-    <style>
-      /* Basic resets and layout styling */
-      body {
-        margin: 0;
-        font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
-      }
+<!-- Top Nav -->
+<nav class="top-nav">
+  <!-- Hardcode your five links from _config.yml, but we do them in HTML -->
+  <a href="/">Home</a>
+  <a href="/research-interests/">Research Interests</a>
+  <a href="/applied-competences/">Applied Competences</a>
+  <a href="/cvs/">CVs</a>
+  <a href="/publications/">Publications</a>
+</nav>
 
-      /* Top navigation container */
-      .top-nav {
-        display: flex;
-        justify-content: flex-end; /* right align */
-        align-items: center;
-        padding: 1rem 2rem;
-      }
+<main>
+  <div class="center-content">
+    <!-- Your avatar photo -->
+    <img src="/assets/images/avatar.png" alt="My Photo" class="avatar" />
 
-      .top-nav a {
-        margin-left: 1rem;
-        text-decoration: none;
-        color: inherit;
-        font-weight: 600;
-      }
+    <!-- Your name -->
+    <div class="name">Dr Charline Tessereau</div>
 
-      /* Main content container */
-      .center-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 3rem;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 1rem;
-      }
+    <!-- "Presentation text" like Joshua's short introduction -->
+    <div class="presentation">
+      <!-- Replace this with your own short text about who you are or what you do -->
+      <p>
+        I am a <strong>Computational Neuroscientist</strong> and <strong>Data Scientist</strong>
+        with a passion for machine learning, data analysis, and bridging real-world
+        decision-making with advanced computational techniques.
+      </p>
+    </div>
 
-      .avatar {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-      }
+    <!-- Social Icons (incl. Bluesky) -->
+    <div class="social-icons">
+      <!-- GitHub -->
+      <a href="https://github.com/charlinetess" target="_blank" aria-label="GitHub">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" />
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/charline-tessereau-457a95b8/" target="_blank" aria-label="LinkedIn">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn" />
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/Charline_Tess" target="_blank" aria-label="Twitter">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png" alt="Twitter" />
+      </a>
+      <!-- Google Scholar -->
+      <a href="https://scholar.google.com/citations?user=XPTJG6wAAAAJ&hl=en&authuser=1" target="_blank" aria-label="Google Scholar">
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/scholars.png" alt="Google Scholar" />
+      </a>
+      <!-- Bluesky (custom with your .svg as icon) -->
+      <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank" aria-label="Bluesky">
+        <img src="/assets/images/bluesky.svg" alt="Bluesky" width="30" height="30" />
+      </a>
+    </div>
+  </div>
+</main>
 
-      .name {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-
-      .presentation {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-      }
-
-      /* Social icons container */
-      .social-icons {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-
-      .social-icons a img {
-        width: 30px;
-        height: 30px;
-      }
-    </style>
-  </head>
-
-  <body class="layout--home">
-    <!-- Top Nav -->
-    <nav class="top-nav">
-      <!-- Hardcode your five links from _config.yml, but we do them in HTML -->
-      <a href="/">Home</a>
-      <a href="/research-interests/">Research Interests</a>
-      <a href="/applied-competences/">Applied Competences</a>
-      <a href="/cvs/">CVs</a>
-      <a href="/publications/">Publications</a>
-    </nav>
-
-    <main>
-      <div class="center-content">
-        <!-- Your avatar photo -->
-        <img src="/assets/images/avatar.png" alt="My Photo" class="avatar" />
-
-        <!-- Your name -->
-        <div class="name">Dr Charline Tessereau</div>
-
-        <!-- "Presentation text" like Joshua's short introduction -->
-        <div class="presentation">
-          <!-- Replace this with your own short text about who you are or what you do -->
-          <p>
-            I am a <strong>Computational Neuroscientist</strong> and <strong>Data Scientist</strong>
-            with a passion for machine learning, data analysis, and bridging real-world
-            decision-making with advanced computational techniques.
-          </p>
-        </div>
-
-        <!-- Social Icons (incl. Bluesky) -->
-        <div class="social-icons">
-          <!-- GitHub -->
-          <a href="https://github.com/charlinetess" target="_blank" aria-label="GitHub">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" />
-          </a>
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/charline-tessereau-457a95b8/" target="_blank" aria-label="LinkedIn">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn" />
-          </a>
-          <!-- Twitter -->
-          <a href="https://x.com/Charline_Tess" target="_blank" aria-label="Twitter">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png" alt="Twitter" />
-          </a>
-          <!-- Google Scholar -->
-          <a href="https://scholar.google.com/citations?user=XPTJG6wAAAAJ&hl=en&authuser=1" target="_blank" aria-label="Google Scholar">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/scholars.png" alt="Google Scholar" />
-          </a>
-          <!-- Bluesky (custom with your .svg as icon) -->
-          <a href="https://bsky.app/profile/chrltsr.bsky.social" target="_blank" aria-label="Bluesky">
-            <img src="/assets/images/bluesky.svg" alt="Bluesky" width="30" height="30" />
-          </a>
-        </div>
-      </div>
-    </main>
-
-    <!-- Minimal Mistakes includes -->
-    {% include scripts.html %}
-  </body>
-</html>
+<!-- Minimal Mistakes includes -->
+{% include scripts.html %}
