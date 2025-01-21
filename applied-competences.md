@@ -4,7 +4,6 @@ title: "Applied Competences"
 permalink: /applied-competences/
 ---
 
-## Applied Competences
 
 Charline's main areas of expertise include:
 
