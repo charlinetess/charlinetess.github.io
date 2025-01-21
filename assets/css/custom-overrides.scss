@@ -110,6 +110,17 @@ body > *:first-child {
   padding-top: 0 !important;
 }
 
+
 head {
   display: none !important;
+}
+/* Remove top margin from masthead */
+.masthead {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Remove top margin from top-nav */
+.top-nav {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
