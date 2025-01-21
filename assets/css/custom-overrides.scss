@@ -105,3 +105,18 @@ body {
   padding: 0 !important;
 }
 
+/* Forcefully remove any margin/padding from the masthead area. */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.masthead .wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* If there's still a leftover space, try removing from all children: */
+.masthead * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
