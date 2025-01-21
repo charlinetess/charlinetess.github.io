@@ -88,3 +88,20 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+/* Force removal of any leftover margin/padding from Minimal Mistakes containers. */
+/* This specifically kills leftover space from .initial-content in default.html. */
+
+.initial-content,
+.wrapper,
+.page__inner-wrap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* If you still see extra space, add the body and more classes */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
