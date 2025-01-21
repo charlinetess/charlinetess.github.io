@@ -1,0 +1,48 @@
+/* =====================================================
+   custom-overrides.scss
+
+   This file addresses your four requests:
+   1. Preserve aspect ratio of the avatar.
+   2. Remove top-left site title link from Minimal Mistakes.
+   3. Eliminate extra blank space above top navigation.
+   4. Make text and images smaller on other pages.
+===================================================== */
+
+/* 1. Preserve Aspect Ratio of the Avatar */
+.center-content .avatar {
+  width: 150px;
+  height: auto !important; /* ensures aspect ratio is kept */
+}
+
+/* 2. Remove the top-left "Dr Charline Tessereau" link
+   from Minimal Mistakes default header */
+.site-title,
+.site-title a {
+  display: none !important; 
+}
+
+/* 3. Eliminate top margin or blank space above navigation:
+   Minimal Mistakes may add some default spacing. 
+   We'll reset margins/padding on body and content containers. */
+body,
+.main-content,
+.page__content,
+.initial-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 4. Make text and images smaller on pages like "Applied Competences" */
+.page__content {
+  font-size: 0.9rem;  /* smaller text */
+  line-height: 1.5;
+  max-width: 800px;   /* optional: narrower content for easier reading */
+  margin: 0 auto;     /* center the content block */
+  padding: 1rem;      /* some padding around content */
+}
+
+/* For images, reduce max-width so they appear smaller. */
+.page__content img {
+  max-width: 70%; 
+  height: auto !important;
+}
