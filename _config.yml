@@ -40,9 +40,18 @@ navigation:
     url: "/publications/"
 
 # Social Links in Header/Footer
-social_links:# Social Links in Header/Footer
-social_links: []
+social_links:
+  - icon: "google scholar"
+    url: "https://scholar.google.com/citations?user=XPTJG6wAAAAJ&hl=en&authuser=1"
 
+  - icon: "twitter"
+    url: "https://x.com/Charline_Tess"
+
+  - icon: "github"
+    url: "https://github.com/charlinetess"
+
+  - icon: "linkedin"
+    url: "https://www.linkedin.com/in/charline-tessereau-457a95b8/"
 
 # SEO
 seo:
