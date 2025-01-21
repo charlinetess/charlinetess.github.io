@@ -75,3 +75,16 @@
   margin: 1rem auto !important; /* centers images */
 }
 
+/* Kills leftover top-left blank margin/padding from masthead or site-header */
+.masthead,
+.masthead__content,
+.site-header,
+.site-header__content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.masthead .wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
