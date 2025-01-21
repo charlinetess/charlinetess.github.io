@@ -32,27 +32,6 @@
   padding: 0 !important;
 }
 
-/* 4) Make text & images smaller on pages (Applied Competences, etc.) */
-.page__content,
-.post__content,
-.archive__content {
-  font-size: 0.9rem !important; /* smaller text; tweak as needed */
-  line-height: 1.5 !important;
-  max-width: 800px !important; /* narrower content for easier reading */
-  margin: 1rem auto !important;
-  padding: 0 1rem !important;
-}
-
-/* Reduce images to 70% of the container width, keep aspect ratio */
-.page__content img,
-.post__content img,
-.archive__content img {
-  max-width: 70% !important;
-  height: auto !important;
-  display: block;
-  margin: 1rem auto !important; /* centers images */
-}
-
 /* Additional Rules to Eliminate Any Extra Top Margin */
 .initial-content,
 .wrapper,
@@ -76,17 +55,29 @@ main * {
   padding: 0 !important;
 }
 
-/* Remove any leftover margin/padding from masthead area */
-.masthead,
-.masthead__inner-wrap,
-.masthead__menu,
-.masthead .wrapper {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 /* Eliminate margin and padding from all children of masthead */
 .masthead * {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* 4) Make text & images smaller on pages (Applied Competences, etc.) */
+.page__content,
+.post__content,
+.archive__content {
+  font-size: 0.9rem !important; /* smaller text; tweak as needed */
+  line-height: 1.5 !important;
+  max-width: 800px !important; /* narrower content for easier reading */
+  margin: 1rem auto !important;
+  padding: 0 1rem !important;
+}
+
+/* Reduce images to 70% of the container width, keep aspect ratio */
+.page__content img,
+.post__content img,
+.archive__content img {
+  max-width: 70% !important;
+  height: auto !important;
+  display: block;
+  margin: 1rem auto !important; /* centers images */
 }
