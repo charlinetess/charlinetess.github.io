@@ -81,3 +81,33 @@ main * {
   display: block;
   margin: 1rem auto !important; /* centers images */
 }
+
+/* Final override to ensure no top margin */
+body,
+html,
+main,
+.initial-content,
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.wrapper,
+.page__inner-wrap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Additionally, target any top elements */
+body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove any margin/padding from specific containers */
+.page__content,
+.post__content,
+.archive__content,
+.search-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
