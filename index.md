@@ -5,7 +5,7 @@ title: ""
 
 
 
-<div style="text-align: center; margin-top: 40px;">
+<div style="text-align: center; margin-top: 0px;">
   <h2>Welcome</h2>
 </div>
 
@@ -32,7 +32,7 @@ title: ""
   </a>
 </div>
 
-<div style="text-align: center; margin-top: 40px;">
+<div style="text-align: center; margin-top: 0px;">
   <a href="/cvs/" class="button">CVs</a>
   <a href="/research-interests/" class="button">Research Interests</a>
   <a href="/applied-competences/" class="button">Applied Competences</a>
