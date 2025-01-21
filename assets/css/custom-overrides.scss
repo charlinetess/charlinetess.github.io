@@ -82,24 +82,17 @@ main * {
   margin: 1rem auto !important; /* centers images */
 }
 
-/* Final override to ensure no top margin */
-body,
-html,
-main,
-.initial-content,
-.masthead,
-.masthead__inner-wrap,
-.masthead__menu,
-.wrapper,
-.page__inner-wrap {
+/* Comprehensive override to remove all margins and padding */
+* {
   margin: 0 !important;
   padding: 0 !important;
+  box-sizing: border-box;
 }
 
-/* Additionally, target any top elements */
-body > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+/* Specific override for any remaining elements */
+body, html, main, .initial-content, .masthead, .masthead__inner-wrap, .masthead__menu {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Remove any margin/padding from specific containers */
@@ -109,5 +102,11 @@ body > *:first-child {
 .search-content {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* Final override to ensure no top margin */
+body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
