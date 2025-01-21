@@ -48,3 +48,30 @@
   max-width: 70% !important;
   height: auto !important;
 }
+
+/* custom-overrides.scss
+
+   Scales down text + images on pages with layout: single
+   or other Minimal Mistakes layouts.
+
+   1) Decrease font size
+   2) Limit image width to 70%
+*/
+
+/* 1) Smaller text on pages */
+.page__content {
+  font-size: 0.9rem !important; /* Adjust to your preference */
+  line-height: 1.5 !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 1rem !important;
+}
+
+/* 2) Limit image size to 70% of content width */
+.page__content img {
+  max-width: 70% !important;
+  height: auto !important;
+  display: block;
+  margin: 1rem auto !important; /* centers images */
+}
+
