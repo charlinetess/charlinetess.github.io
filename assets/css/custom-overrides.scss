@@ -5,7 +5,6 @@
    2) Remove top-left site title link from Minimal Mistakes
    3) Remove extra blank space above navigation
    4) Make text and images smaller on inner pages
-   5) Eliminate any residual top margins
 =============================================================== */
 
 /* 1) Preserve avatar aspect ratio */
@@ -32,9 +31,34 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-.header {
+
+/* Additional Rules to Eliminate Any Extra Top Margin */
+.initial-content,
+.wrapper,
+.page__inner-wrap,
+main,
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove any top margin from main */
+main {
   margin-top: 0 !important;
   padding-top: 0 !important;
+}
+
+/* Ensure no margins on all elements within main */
+main * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Eliminate margin and padding from all children of masthead */
+.masthead * {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* 4) Make text & images smaller on pages (Applied Competences, etc.) */
@@ -58,51 +82,34 @@
   margin: 1rem auto !important; /* centers images */
 }
 
-/* 5) Eliminate any residual top margins */
-
-/* Ensure no margins on the main containers */
-body,
-html,
-main,
-.initial-content,
-.masthead,
-.masthead__inner-wrap,
-.masthead__menu,
-.wrapper,
-.page__inner-wrap {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Remove any top margin from main */
-main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Ensure no margins on all elements within main */
-main * {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Eliminate margin and padding from all children of masthead */
-.masthead * {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Additional comprehensive reset for any remaining elements */
-body > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Optional: Remove any global margins/paddings (use cautiously) */
+/* Comprehensive override to remove all margins and padding */
 * {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
 }
 
+/* Specific override for any remaining elements */
+body, html, main, .initial-content, .masthead, .masthead__inner-wrap, .masthead__menu {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
+/* Remove any margin/padding from specific containers */
+.page__content,
+.post__content,
+.archive__content,
+.search-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Final override to ensure no top margin */
+body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+head {
+  display: none !important;
+}
