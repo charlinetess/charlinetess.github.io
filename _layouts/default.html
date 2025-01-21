@@ -2,6 +2,76 @@
 ---
 <!doctype html>
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <style>
+      /* Basic resets and layout styling */
+      body {
+        margin: 0;
+        font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+      }
+
+      /* Top navigation container */
+      .top-nav {
+        display: flex;
+        justify-content: flex-end; /* right align */
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+
+      .top-nav a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+      }
+
+      /* Main content container */
+      .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+      }
+
+      .avatar {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      .name {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .presentation {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      /* Social icons container */
+      .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .social-icons a img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
@@ -26,8 +96,5 @@
     </div>
 
     {% include scripts.html %}
-
-    <!-- Move copyright inside the body -->
-    {% include copyright.html %}
   </body>
 </html>
