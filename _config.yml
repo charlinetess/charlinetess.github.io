@@ -61,7 +61,6 @@ seo:
 # Plugins
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-include-cache
