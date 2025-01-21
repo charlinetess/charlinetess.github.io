@@ -1,7 +1,8 @@
 ---
-layout: home
-title: "Welcome"
+layout: home_custom
+title: ""
 ---
+
 
 
 <div style="text-align: center; margin-top: 40px;">
