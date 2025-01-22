@@ -51,12 +51,14 @@ main * {
 }
 
 /* 4) Make text & images smaller on pages (Applied Competences, etc.) */
+/* 4) Make text & images smaller on pages (Applied Competences, etc.) */
 .page__content,
 .post__content,
-.archive__content {
-  font-size: 0.9rem; /* smaller text; tweak as needed */
+.archive__content,
+.single__content {
+  font-size: 0.9rem; /* Smaller text */
   line-height: 1.5;
-  max-width: 800px; /* narrower content for easier reading */
+  max-width: 800px; /* Narrower content for better readability */
   margin: 1rem auto;
   padding: 0 1rem;
 }
@@ -64,12 +66,20 @@ main * {
 /* Reduce images to 70% of the container width, keep aspect ratio */
 .page__content img,
 .post__content img,
-.archive__content img {
+.archive__content img,
+.single__content img {
   max-width: 70%;
   height: auto;
   display: block;
-  margin: 1rem auto; /* centers images */
+  margin: 1rem auto; /* Center images */
 }
+
+/* Adjust navigation link sizes */
+.top-nav a {
+  font-size: 1rem; /* Adjust as needed */
+  padding: 0.5rem 1rem; /* Add padding for better click area */
+}
+
 
 /* Remove top margin from masthead */
 .masthead {
