@@ -1,35 +1,24 @@
-/* ================================================================
-   custom-overrides.scss
-
-   1) Preserve aspect ratio of the avatar
-   2) Remove top-left site title link from Minimal Mistakes
-   3) Remove extra blank space above navigation
-   4) Make text and images smaller on inner pages
-=============================================================== */
-
 /* 1) Preserve avatar aspect ratio */
 .center-content .avatar,
 .avatar {
-  width: 150px !important;
-  height: auto !important;
+  width: 150px;
+  height: auto;
   object-fit: cover; /* optional if you want a cropped effect */
 }
 
-/* 2) Remove top-left "Dr Charline Tessereau" link 
-   from Minimal Mistakes default header */
+/* 2) Remove top-left "Dr Charline Tessereau" link from Minimal Mistakes default header */
 .masthead .site-title,
 .masthead .site-title a {
-  display: none !important;
+  display: none;
 }
 
-/* 3) Remove extra blank space above the top nav 
-   by zeroing out masthead margins/padding */
+/* 3) Remove extra blank space above the top nav by zeroing out masthead margins/padding */
 .masthead,
 .masthead__content,
 .masthead__inner-wrap,
 .masthead__menu {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* Additional Rules to Eliminate Any Extra Top Margin */
@@ -39,85 +28,57 @@
 main,
 body,
 html {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove any top margin from main */
 main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Ensure no margins on all elements within main */
 main * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* Eliminate margin and padding from all children of masthead */
 .masthead * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* 4) Make text & images smaller on pages (Applied Competences, etc.) */
 .page__content,
 .post__content,
 .archive__content {
-  font-size: 0.9rem !important; /* smaller text; tweak as needed */
-  line-height: 1.5 !important;
-  max-width: 800px !important; /* narrower content for easier reading */
-  margin: 1rem auto !important;
-  padding: 0 1rem !important;
+  font-size: 0.9rem; /* smaller text; tweak as needed */
+  line-height: 1.5;
+  max-width: 800px; /* narrower content for easier reading */
+  margin: 1rem auto;
+  padding: 0 1rem;
 }
 
 /* Reduce images to 70% of the container width, keep aspect ratio */
 .page__content img,
 .post__content img,
 .archive__content img {
-  max-width: 70% !important;
-  height: auto !important;
+  max-width: 70%;
+  height: auto;
   display: block;
-  margin: 1rem auto !important; /* centers images */
+  margin: 1rem auto; /* centers images */
 }
-
-/* Comprehensive override to remove all margins and padding */
-* {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-}
-
-/* Specific override for any remaining elements */
-body, html, main, .initial-content, .masthead, .masthead__inner-wrap, .masthead__menu {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Remove any margin/padding from specific containers */
-.page__content,
-.post__content,
-.archive__content,
-.search-content {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Final override to ensure no top margin */
-body > *:first-child {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
 
 /* Remove top margin from masthead */
 .masthead {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 0;
+  padding-top: 0;
 }
+
 /* Remove top margin from top-nav */
 .top-nav {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 0;
+  padding-top: 0;
 }
